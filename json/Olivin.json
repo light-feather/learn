@@ -1,0 +1,12 @@
+{
+  "birthday": "1997-10-23",
+  "major": [
+    "数控机床",
+    "挖掘机"
+  ],
+  "school": "藍翔",
+  "name": "Olivin",
+  "has_girlfriend": false,
+  "comment": "这是一个注释",
+  "age": 25
+}

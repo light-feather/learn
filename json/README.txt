@@ -1,0 +1,12 @@
+json数据的三种创建方法：
+1.直接采用JSONObject对象的put方法创建
+2.采用Map的put来初始化数据，用JSONObject的构造方法创建
+3.采用JavaBean的属性来设置值，用JSONObject的构造方法创建
+
+Gson的创建方法类似上面，着重描述JavaBean方法下的创建过程：
+1.采用JavaBean的属性来设置值，创建Gson对象，用Gson对象的toJson方法转化为json字符串
+2.采用JavaBean的属性来设置值，创建Gson对象，利用JsonBuilder来创建JsonBuilder对象，利用该对象来设置Gson对象的格式，采用create方法创建Gson对象，再利用toJson转化
+
+从文件中读取json字符串：
+1.JSONObject方式的读取，只支持按key返回value的方式，取之前要先以JSONObject的isNull对象来判空，不支持JavaBean方式的反解析
+2.Gson方式支持JavaBean方式的反解析，还可以设置解析格式
