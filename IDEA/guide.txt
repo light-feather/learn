@@ -29,3 +29,18 @@ Add to Favorites：alt+shift+F（可以用来收藏类和函数）
 19.选中格式相同的列进行列操作：ctrl+alt+shift+J
 20.跳转到出错行代码处：F2
 21.代码排列重格式化 Reformat code：ctrl+alt+L
+22.自定义模板：Live Templates （通过Find Action查找）
+23.内置postfix：（通过Find Action查找Postfix查看内置配置写法）
+xx.fori（i<xx的for循环），
+xx.sout（控制台打印xx），
+xx.field（自动补全带参构造函数残缺this.xx=xx;及类的private final 类型 xx;属性的创建）
+xx.return（自动补全return xx;）
+xx.nn（自动补全if(xx != null){}）
+24.alt+Enter（）
+自动创建函数
+list replace（将for循环操作集合换为foreach操作）
+字符串的format（在拼接字符串上按alt+Enter，选择Replace + with 'String.format()'如果是println（）里的拼接字符串将直接换为格式化输出）
+字符串的Builder.append拼接法（同上选择Replace + with 'StringBuilder.append()' ）
+实现接口（在接口类上按alt+Enter将会弹出创建接口实现类的小窗口）
+单词拼写纠正（在有波浪下划线的单词上按alt+Enter，选择Typo: Changeto.. 将会出现单词拼写替换的一些建议）
+导包
