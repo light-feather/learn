@@ -1,0 +1,3 @@
+RuntimeException一般是语法错误，运行时可由虚拟机自动抛出并捕获
+CheckedException需要自己用try{}catch(){}语句进行捕获
+多重try/catch：Exception的级别要从Exception的最低级子类开始写由子到父
