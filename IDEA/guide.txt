@@ -17,3 +17,15 @@ Add to Favorites：alt+shift+F（可以用来收藏类和函数）
 9.alt+L+跳转位置单词的首字母（自定义emacsIDEA AceJumpWord跳转快捷键）
 10.文件区和代码区的跳转：alt+1（代码跳文件）Esc（文件跳代码）
 11.安装vim插件在多窗口编辑下的跳转方式是：自定义跳转组合键+（H左J下K上L右）
+12.查找类：ctrl+N 输入类名（按两下这对快捷键将会连同jar包下的类一起搜索出来）
+13.查找文件：ctrl+shift+N 输入文件名
+14.查找属性或函数：ctrl+alt+shift+N 输入属性或函数名
+15.搜索字符串：Find in Path：ctrl+shift+F
+可选项：Match case 匹配大小写，Words 为单词，Regex 通过正则表达式匹配，File mask 匹配文件类型
+可选搜索范围：In project 在项目下，Module 在模块下，Directory 在目录下 Scope 自定义搜索范围
+16.移动光标到单词的开始或结束：ctrl+←或→，选中单词：ctrl+shift+←或→
+17.转换选中部分为大小写：ctrl+shift+U
+18.移动光标到行首：Home，移动到行尾：End
+19.选中格式相同的列进行列操作：ctrl+alt+shift+J
+20.跳转到出错行代码处：F2
+21.代码排列重格式化 Reformat code：ctrl+alt+L
