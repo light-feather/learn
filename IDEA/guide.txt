@@ -44,3 +44,42 @@ list replace（将for循环操作集合换为foreach操作）
 实现接口（在接口类上按alt+Enter将会弹出创建接口实现类的小窗口）
 单词拼写纠正（在有波浪下划线的单词上按alt+Enter，选择Typo: Changeto.. 将会出现单词拼写替换的一些建议）
 导包
+25.重构：
+重构变量： shift+F6（重命名）
+重构函数：ctrl+F6（改变方法的定义），添加参数时也可以在添加完处按alt+Enter选择添加一个参数，来修改原方法的定义
+26.抽取
+抽取变量：ctrl+alt+V（抽取出字符串为一个单独的变量）
+抽取静态常量：ctrl+alt+C（将字符串抽取为一个静态常量）
+抽取成员变量：ctrl+alt+F
+抽取方法参数：ctrl+alt+P
+抽取函数：ctrl+alt+M
+27.git的集成操作（此处没写，后期应用git时再加入，对应课程5-1）
+28.寻找修改轨迹：Find Action下输入local history
+29.Spring的关联：ctrl+alt+shift+S（打开Project Structure，选择Facets，添加Spring模块选中Spring的配置文件）
+30.数据库的关联：右边框的Database进行数据库关联的设置
+31.调试程序：
+断点调试：ctrl+F8（添加断点）
+单步运行：shift+F9（单步运行状态下，每次按F8程序就会一行一行的往下运行直到程序结束）
+Resume：（单步运行状态下）F9（跳到下一个断点，如果没有下一个断点，运行到程序结束）
+查看所有断点：ctrl+shift+F8
+仅是所有断点：Mute Breakpoints（在调试状态下，点击左下角边栏的该键，所有的断点变为白灰色，再按一下F9，跳过之后所有断点）
+条件断点：先打上断点，再按ctrl+shift+F8 输入条件表达式，满足条件即会中断程序运行
+表达式求值：alt+F8（查看指定值，在运行过程中的演化，现在Debug过程中自动显示值的变化）
+运行到指定行：alt+F9
+setValue：在调试状态下，对下面状态栏里的变量按F2动态赋值，观察运行结果
+32.run anywhere if you can：
+运行当前上下文：ctrl+shift+F10（运行光标所在处的上级上下文）
+在当前可运行列表中选择一个运行：alt+shift+F9（从历史运行列表中选一个运行）
+编辑当前运行：Edit Configurations（可以修改运行时的参数传入，再按shift+F9可以看到修改后的效果）
+33.文件操作
+在当前文件夹下创建一个文件：ctrl+alt+Insert
+复制当前文件：F5
+移动当前文件：F6
+34.文本操作：
+复制简单文件名：光标选中文件ctrl+C
+复制完整的路径名：光标选中文件ctrl+shift+C
+调出剪切板：ctrl+shift+V
+35.结构图：
+查看当前文件的方法和属性提纲：ctrl+F12
+查看maven依赖和类图：ctrl+alt+shift+U，在类图上面ctrl+F，可以进行依赖的选取，点击可以看到依赖的详细信息
+查看类继承结构，方法调用层次：ctrl+H，光标在方法上，按ctrl+alt+H（查看方法调用其他方法或类的结构，或者其他方法调用该方法的情况）
