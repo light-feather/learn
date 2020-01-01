@@ -17,25 +17,25 @@ public class ReadJSONSample {
          * */
         JSONObject Olivin = new JSONObject(content);
         //如果json中没有name则不会打印
-        if(Olivin.isNull("name")) {
+        if(!Olivin.isNull("name")) {
             System.out.println("姓名是:" + Olivin.getString("name"));
         }
-        if(Olivin.isNull("age")){
+        if(!Olivin.isNull("age")){
             System.out.println("年龄: "+Olivin.getDouble("age"));
         }
-        if(Olivin.isNull("school")){
+        if(!Olivin.isNull("school")){
             System.out.println("学校:"+Olivin.getString("school"));
         }
-        if(Olivin.isNull("has_girlfriend")){
+        if(!Olivin.isNull("has_girlfriend")){
             System.out.println("有没有女朋友: "+Olivin.getBoolean("has_girlfriend"));
         }
-        if(Olivin.isNull("major")){JSONArray jsonArray = Olivin.getJSONArray("major");
+        if(!Olivin.isNull("major")){JSONArray jsonArray = Olivin.getJSONArray("major");
             for (int i = 0; i < jsonArray.length(); i++) {
                 String major = (String) jsonArray.get(i);
                 System.out.println("专业-"+(i+1)+"-"+major);
             }
         }
-        if(Olivin.isNull("comment")){
+        if(!Olivin.isNull("comment")){
             System.out.println("注释: "+Olivin.getString("comment"));
         }
     }
